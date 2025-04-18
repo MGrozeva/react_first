@@ -1,0 +1,96 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+/* header and navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  /* pin navigation bar on top
+  position: fixed;
+  */
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-family: "Calibri", sans-serif;
+  color: #0098DB;      
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #0098DB;
+  margin-right: 2em;
+  margin-left: 2em; 
+  font-size: 1.4em;   
+}
+header .titles {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  justify-content: center;
+  font-family: "Calibri", sans-serif;    
+  font-style: bold;
+  font-size: 2rem;
+}
+header .titles .title {
+  margin: 2px;
+  color: #fff;    
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+header .titles .sub-title {
+  margin: 2px;          
+}
+
+/*youtube video*/
+.video-container{
+  width: 70%;
+  height: 65%;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;  
+  transform: translate(-50%, -50%);    
+}
+/*footer */
+footer{
+  background-color: #fefefe;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0098DB;
+  padding: 0em 0em 0em 2em;
+  font-family: "Calibri", sans-serif;    
+}
+#contacts ul{
+  list-style: none;
+}
+#contacts ul li{
+  margin-top: 0.5em;
+}
+#contacts ul li i{
+  margin-right: 1em;
+}
+footer section .title{
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+footer section nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+footer section nav ul{
+  list-style: none;
+}
+footer section nav ul li{
+  margin-bottom: 0.5em;
+}
+footer section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 45%;
+}
