@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "f6f5",
+      "name": "",
+      "email": "",
+      "username": "test",
+      "password": "teesting",
+      "confirmPassword": ""
+    },
+    {
+      "id": "8de5",
+      "name": "",
+      "email": "",
+      "username": "mdd",
+      "password": "mddd",
+      "confirmPassword": ""
+    },
+    {
+      "id": "dc3d",
+      "name": "",
+      "email": "",
+      "username": "mdd",
+      "password": "mddd",
+      "confirmPassword": ""
+    }
+  ]
+}

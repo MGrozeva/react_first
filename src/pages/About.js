@@ -11,7 +11,7 @@ const About = () => {
           frameBorder="0" 
           allowFullScreen
           title="About Us Video">            
-          </iframe>
+          </iframe>        
     </div>    
   );
 };

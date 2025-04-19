@@ -25,7 +25,7 @@ const Hero = () => {
   return (
     <section style={heroStyle}>
       <div style={textStyle}>
-        <p>3500 Seals Rescued from Plastic Rubbish</p>
+        <p>4000 Seals Rescued from Plastic Rubbish</p>
       </div>
     </section>
   );

@@ -16,8 +16,8 @@
     "web-vitals": "^2.1.4"
   },
   "overrides": {
-  "svgo": "^2.8.0",
-  "postcss": "^8.4.0"
+    "svgo": "^2.8.0",
+    "postcss": "^8.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

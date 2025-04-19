@@ -55,6 +55,51 @@ header .titles .sub-title {
   left: 50%;  
   transform: translate(-50%, -50%);    
 }
+/*gellery*/
+.gallery {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-top: 4em;
+}
+
+.image {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+/*Text Content*/
+.info {
+  margin: 0 5em 2em 5em;
+  text-align: center;
+  flex-basis: 100%;
+  font-size: 2em;
+}
+.legitimacy{
+  margin: 0 1em 1.5em 1em;
+  text-align: center;
+  flex-basis: 100%;
+  margin-top: 3em;
+  font-family: "Calibri", sans-serif; 
+  font-size: 3em;
+}
+/*buttons*/
+.submintbtn{
+  width: 150px;
+  height: 25px;        
+  cursor: pointer;  
+  border: 2px solid black; 
+  margin: 1em 1em 1.5em 1em;
+}
+
 /*footer */
 footer{
   background-color: #fefefe;
