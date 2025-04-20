@@ -30,8 +30,8 @@ const LoginForm = ({ onLogin }) => {
       <h2 className="title">Login</h2>
       <div>
         <label className="description">
-          Username:
-          <input
+          User:
+          <input className="dataentry"
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
@@ -40,8 +40,8 @@ const LoginForm = ({ onLogin }) => {
       </div>
       <div>
         <label className="description">
-          Password:
-          <input
+          Pass: 
+          <input className="dataentry"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}

@@ -1,33 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [images, setImages] = useState([]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const heroStyle = {
-    width: "100%",
-    backgroundImage: "url('/images/chase.png')", 
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    height: "80vh",
-  };
+  useEffect(() => {
+    // Fetch images from JSON server
+    fetch("http://localhost:5000/heroImages")
+      .then((response) => response.json())
+      .then((data) => setImages(data))
+      .catch((error) => console.error("Error fetching hero images:", error));
+  }, []);
 
-  const textStyle = {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: "15% 15% 10% 15%",
-    fontFamily: '"Calibri", sans-serif',
-    textAlign: "center",
-    color: "#fff",
-    textShadow: "1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000",
-    fontSize: "5em",
-  };
+  useEffect(() => {
+    // Rotate images every 8 seconds
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 8000);
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, [images]);
+
   return (
-    <section style={heroStyle}>
-      <div style={textStyle}>
-        <p>4000 Seals Rescued from Plastic Rubbish</p>
-      </div>
-    </section>
+    <div
+      className="hero"
+      style={{
+        backgroundImage: `url(${images[currentImageIndex]?.url || ""})`,
+      }}
+    >
+      <p className="herotext">4000 Seals Rescued from Plastic Rubbish</p>
+      {images.length === 0 && <p>Loading...</p>}
+    </div>
   );
 };
 

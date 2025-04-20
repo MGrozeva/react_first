@@ -24,5 +24,24 @@
       "password": "mddd",
       "confirmPassword": ""
     }
+  ],
+  "heroImages": [
+    { "id": 1, "url": "/images/chase.png" },
+    { "id": 2, "url": "/images/chase4.png" },
+    { "id": 3, "url": "/images/chase1.png" }
+  ],  
+  "galleryImages": [
+    { "id": 1, "url": "/images/Seal1.png" },
+    { "id": 2, "url": "/images/chase2.png" },
+    { "id": 3, "url": "/images/Seal2.png" },
+    { "id": 4, "url": "/images/datacollection.png" },
+	{ "id": 5, "url": "/images/Seal3.png" },
+	{ "id": 6, "url": "/images/cleanup.png" },
+	{ "id": 7, "url": "/images/Seal4.png" },
+	{ "id": 8, "url": "/images/Seal5.png" },
+	{ "id": 9, "url": "/images/awareness.png" },
+	{ "id": 10, "url": "/images/chase3.png" },
+	{ "id": 11, "url": "/images/Seal6.png" },
+	{ "id": 12, "url": "/images/plastic.png" }	
   ]
 }

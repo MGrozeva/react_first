@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import Footer from './components/Footer';
 import LoginForm from "./components/LoginForm";
 import RegisterForm from "./components/RegisterForm";
+import Gallery2 from './components/Gallery2';
 import './App.css';
 import './style.css';
 
@@ -44,11 +45,11 @@ function App() {
       ) : (
         <>
           <h2 className="legitimacy">Welcome, {userName}!</h2>
-          <button onClick={handleLogout}>Logout</button>
+          <button className="submintbtn" onClick={handleLogout}>Logout</button>
           <div>
-            <h2 className="legitimacy">Additional Content</h2>
-            <p>Here's some content only logged-in users can see!</p>
-            <p>Exclusive features go here.</p>
+            <h2 className="legitimacy">Watch to learn more about Ocean Conservation Namibia</h2>
+            <Gallery2 />
+            <p className="description">Subscribe for our newsletter <a href="https://www.ocnamibia.org/">here</a></p>
           </div>
         </>
       )}

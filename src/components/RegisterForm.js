@@ -40,8 +40,8 @@ const RegisterForm = () => {
     <form onSubmit={handleSubmit}>
       <h2 className="title">Register</h2>
       <label className="description">
-        Username:
-        <input
+        User:
+        <input className="dataentry"
           type="text"
           name="username"
           value={formData.username}
@@ -50,8 +50,8 @@ const RegisterForm = () => {
       </label>
       <br />
       <label className="description">
-        Password:
-        <input
+        Pass:
+        <input className="dataentry"
           type="password"
           name="password"
           value={formData.password}
