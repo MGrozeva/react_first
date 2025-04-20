@@ -9,7 +9,7 @@ const About = () => {
           height="500"
           src="https://www.youtube.com/embed/t0tNQGgLe54?si=E2PQfquzvBoE8QHv" 
           frameBorder="0" 
-          allowFullScreen
+          allow="autoplay; encrypted-media; fullscreen"
           title="About Us Video">            
           </iframe>        
     </div>    
